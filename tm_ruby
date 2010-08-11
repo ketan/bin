@@ -1,0 +1,14 @@
+#!/bin/sh
+
+RUBY_EXECUTABLE=ruby
+
+# lookup .rvmrc inside the project root dir to load up rvm environment
+if [[ -s "$TM_PROJECT_DIRECTORY/.rvmrc" ]]; then
+  RUBY_EXECUTABLE=`grep rvm "$TM_PROJECT_DIRECTORY/.rvmrc" | sed -e 's/rvm[ \t]*//'`
+  RUBY_EXECUTABLE="$HOME/.rvm/bin/$RUBY_EXECUTABLE"
+  echo "-------------------"
+  echo "Using ruby: $RUBY_EXECUTABLE"
+  echo "-------------------"
+fi
+
+exec $RUBY_EXECUTABLE "$@"

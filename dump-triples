@@ -1,0 +1,29 @@
+#!/Users/ThoughtWorks/projects/tw/shine/tools/jruby-1.4.0/bin/jruby
+
+require 'java'
+Dir['/Users/ThoughtWorks/projects/tw/shine/tools/openrdf-sesame-2.3.1/lib/*'].each {|jar| require jar}
+Dir['/Users/ThoughtWorks/projects/tw/shine/tools/slf4j/*'].each {|jar| require jar}
+Dir['/Users/ThoughtWorks/projects/tw/shine/tools/log4j/*'].each {|jar| require jar}
+
+triple_store_dir = java.io.File.new('/Users/ThoughtWorks/projects/tw/triples/cruise02-broken-tests-only/production')
+
+native_store = org.openrdf.sail.nativerdf.NativeStore.new(triple_store_dir, "spoc,sopc,posc,psoc,ospc,opsc")
+repo = org.openrdf.repository.sail.SailRepository.new(native_store)
+repo.java_send('initialize')
+
+conn = repo.connection
+
+bvs = conn.prepare_tuple_query(org.openrdf.query.QueryLanguage::SPARQL, %Q{
+  SELECT ?s ?p ?o WHERE {
+    ?s ?p ?o.
+  }
+}).evaluate
+
+count = 0
+while bvs.has_next do
+  result = bvs.next
+  count = count + 1
+  puts "<#{result.getValue('s')}> <#{result.getValue('p')}> <#{result.getValue('o')}>"
+end
+
+puts count

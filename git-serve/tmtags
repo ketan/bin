@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+App	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^  class App $/;"	class	line:10
+GitHttp	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^class GitHttp$/;"	class	line:9
+access_allowed?	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def access_allowed?(user, pass)$/;"	method	line:69
+call	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def call(env)$/;"	method	line:39
+dumb_info_refs	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def dumb_info_refs$/;"	method	line:118
+get_config_setting	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_config_setting(service_name)$/;"	method	line:237
+get_git_config	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_git_config(config_name)$/;"	method	line:247
+get_git_dir	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_git_dir(path)$/;"	method	line:192
+get_idx_file	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_idx_file$/;"	method	line:144
+get_info_packs	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_info_packs$/;"	method	line:125
+get_info_refs	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_info_refs$/;"	method	line:98
+get_loose_object	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_loose_object$/;"	method	line:132
+get_pack_file	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_pack_file$/;"	method	line:138
+get_service_type	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_service_type$/;"	method	line:201
+get_text_file	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def get_text_file$/;"	method	line:150
+git_command	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def git_command(command)$/;"	method	line:265
+has_access	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def has_access(rpc, check_content_type = false)$/;"	method	line:223
+hdr_cache_forever	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def hdr_cache_forever$/;"	method	line:322
+hdr_nocache	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def hdr_nocache$/;"	method	line:316
+initialize	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def initialize(config = false)$/;"	method	line:27
+match_routing	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def match_routing$/;"	method	line:208
+pkt_flush	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def pkt_flush$/;"	method	line:303
+pkt_write	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def pkt_write(str)$/;"	method	line:307
+read_body	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def read_body$/;"	method	line:252
+render_method_not_allowed	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def render_method_not_allowed$/;"	method	line:278
+render_need_authorize	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def render_need_authorize$/;"	method	line:294
+render_no_access	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def render_no_access$/;"	method	line:290
+render_not_found	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def render_not_found$/;"	method	line:286
+send_file	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def send_file(reqfile, content_type)$/;"	method	line:163
+service_rpc	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def service_rpc$/;"	method	line:77
+set_config	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def set_config(config)$/;"	method	line:31
+set_config_setting	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def set_config_setting(key, value)$/;"	method	line:35
+update_server_info	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def update_server_info$/;"	method	line:260
+user_info	/Users/ThoughtWorks/bin/git-serve/git_http.rb	/^    def user_info$/;"	method	line:61

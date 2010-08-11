@@ -1,0 +1,1 @@
+sudo su postgres -c 'cd / ; /opt/local/lib/postgresql83/bin/postgres -D /opt/local/var/db/postgresql83/defaultdb &'
